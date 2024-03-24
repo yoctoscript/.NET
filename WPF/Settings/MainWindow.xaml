@@ -8,13 +8,72 @@
         Title="MainWindow" Height="450" Width="800">
     <Grid>
         <TabControl>
-            <TabItem Header="TabItem">
-                <Grid Background="Aqua"/>
+            <TabItem x:Name="ddd" Header="Controllers">
+                <Grid Background="Gray"/>
             </TabItem>
-            <TabItem Header="TabItem">
-                <Grid Background="Red">
+            <TabItem Header="Inputs / Outputs" Height="22" Margin="-2,-2,-2,0" VerticalAlignment="Top">
+                <Grid Background="Gray">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="103*"/>
+                        <ColumnDefinition Width="294*"/>
+                    </Grid.ColumnDefinitions>
+                    <Button Content="Button" HorizontalAlignment="Left" Margin="107,104,0,0" VerticalAlignment="Top"/>
+                    <TabControl Margin="176,114,114,66" RenderTransformOrigin="0.762,0.197" Background="#FF30F115" Grid.ColumnSpan="2">
+                        <TabItem Header="TabItem">
+                            <Grid Background="#FF255AFF">
+                                <Button Content="Button" HorizontalAlignment="Left" Margin="28,104,0,0" VerticalAlignment="Top" Grid.Column="1" Height="30" RenderTransformOrigin="0.5,0.5">
+                                </Button>
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="79*"/>
+                                    <ColumnDefinition Width="419*"/>
+                                </Grid.ColumnDefinitions>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="TabItem"/>
+                    </TabControl>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Notifications" Height="22" Margin="-2,-2,-2,0" VerticalAlignment="Top">
+                <Grid Background="Gray">
                     <Button Content="Button" HorizontalAlignment="Left" Margin="107,104,0,0" VerticalAlignment="Top"/>
                 </Grid>
+            </TabItem>
+            <TabItem Header="Users" Height="22" Margin="-2,-2,-2,0" VerticalAlignment="Top">
+                <Grid Background="Gray">
+                    <Button Content="Button" HorizontalAlignment="Left" Margin="107,104,0,0" VerticalAlignment="Top"/>
+                    <TabControl Margin="176,114,114,66" RenderTransformOrigin="0.762,0.197" Background="#FF30F115">
+                        <TabItem Header="TabItem">
+                            <Grid Background="#FF255AFF">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="79*"/>
+                                    <ColumnDefinition Width="419*"/>
+                                </Grid.ColumnDefinitions>
+                                <Button Content="Button" HorizontalAlignment="Left" Margin="28,104,0,0" VerticalAlignment="Top" Grid.Column="1" Height="30" RenderTransformOrigin="0.5,0.5"/>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="TabItem"/>
+                    </TabControl>
+                </Grid>
+            </TabItem>
+            <TabItem Header="ModBus" Height="22" Margin="-2,-2,-2,0" VerticalAlignment="Top">
+                <Grid Background="Gray">
+                    <Button Content="Button" HorizontalAlignment="Left" Margin="107,104,0,0" VerticalAlignment="Top"/>
+                    <TabControl Margin="176,114,114,66" RenderTransformOrigin="0.762,0.197" Background="#FF30F115">
+                        <TabItem Header="TabItem">
+                            <Grid Background="#FF255AFF">
+                                <Grid.ColumnDefinitions>
+                                    <ColumnDefinition Width="79*"/>
+                                    <ColumnDefinition Width="419*"/>
+                                </Grid.ColumnDefinitions>
+                                <Button Content="Button" HorizontalAlignment="Left" Margin="28,104,0,0" VerticalAlignment="Top" Grid.Column="1" Height="30" RenderTransformOrigin="0.5,0.5"/>
+                            </Grid>
+                        </TabItem>
+                        <TabItem Header="TabItem"/>
+                    </TabControl>
+                </Grid>
+            </TabItem>
+            <TabItem Header="Backup / Restore" Height="22" Margin="-2,-2,-2,0" VerticalAlignment="Top">
+                <Grid Background="Gray"/>
             </TabItem>
         </TabControl>
 
